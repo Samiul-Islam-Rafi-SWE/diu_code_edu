@@ -1,5 +1,7 @@
 {
+  
   "name": "react-project",
+  "homepage": "https://samiul-islam-rafi-swe.github.io/diu_code_edu",
   "private": true,
   "version": "0.0.0",
   "type": "module",
