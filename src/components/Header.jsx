@@ -26,15 +26,7 @@ const Header = () => {
   }, []);
 
   return (
-    <nav style={isSticky ? {
-      backgroundColor: "rgba(16, 28, 50, 0.7)",
-      backdropFilter: "blur(15px)",
-      boxShadow: "0 4px 6px rgba(0,0,0,0.1)"
-    } : {
-      backgroundColor: "rgba(255, 255, 255, 0.1)",
-      backdropFilter: "blur(10px)",
-      boxShadow: "none"
-    }}>
+    <nav className={isSticky ? 'sticky' : 'normal'}>
       <h3 className="logo-text">DIU Code Education</h3>
       
       <div className="Navigation">
@@ -43,6 +35,7 @@ const Header = () => {
           <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
           <li><Link to="/tutorials" onClick={toggleMenu}>Free Tutorials</Link></li>
           <li><Link to="/courses" onClick={toggleMenu}>Courses</Link></li>
+          <li><Link to="/blog" onClick={toggleMenu}>Blog</Link></li>
           <li><Link to="/registration" onClick={toggleMenu}>Registration</Link></li>
         </ul>
         <i className="fas fa-bars" id="menu-btn" onClick={toggleMenu}></i>

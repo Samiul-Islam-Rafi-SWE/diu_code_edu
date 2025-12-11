@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Tutorials from './components/Tutorials';
 import Courses from './components/Courses';
 import Registration from './components/Registration';
+import Blog from './components/Blog';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tutorials" element={<Tutorials />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/registration" element={<Registration />} />
       </Routes>
       <Footer />
