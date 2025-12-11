@@ -31,14 +31,26 @@ const Registration = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const [errors, setErrors] = useState({});
+
   const handleRegistration = () => {
-    let valid = true;
-    let errorMessage = "";
-    if (name.trim() === "") { errorMessage += "Enter Name.\n"; valid = false; }
-    if (email.indexOf("@") === -1) { errorMessage += "Invalid Email.\n"; valid = false; }
-    if (password.length < 6) { errorMessage += "Password min 6 chars.\n"; valid = false; }
-    if (valid) { alert("Success! Welcome, " + name + "."); } 
-    else { alert(errorMessage); }
+    const newErrors = {};
+    if (name.trim() === "") {
+      newErrors.name = "Enter Name.";
+    }
+    if (email.indexOf("@") === -1) {
+      newErrors.email = "Invalid Email.";
+    }
+    if (password.length < 6) {
+      newErrors.password = "Password min 6 chars.";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+    } else {
+      setErrors({});
+      alert("Success! Welcome, " + name + ".");
+    }
   };
 
   return (
@@ -58,9 +70,12 @@ const Registration = () => {
       <div className="form">
         <h3>Student Registration</h3>
         <input type="text" placeholder="Full Name" name="name" required value={name} onChange={(e) => setName(e.target.value)} />
+        {errors.name && <p className="error">{errors.name}</p>}
         <input type="text" placeholder="Student ID (Optional)" name="student_id" value={studentId} onChange={(e) => setStudentId(e.target.value)} />
-        <input type="email" placeholder="Email Address" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input type="email" placeholder="Email Address" name="email" required value={email} onChange={(e) => setEmail(e.targe.value)} />
+        {errors.email && <p className="error">{errors.email}</p>}
         <input type="password" placeholder="Create Password" name="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
+        {errors.password && <p className="error">{errors.password}</p>}
         
         <button className="yellow" onClick={handleRegistration}>Get Free Access</button>
       </div>

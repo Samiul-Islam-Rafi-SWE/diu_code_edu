@@ -36,8 +36,8 @@ h6 {
 /* Navigation */
 nav {
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -468,7 +468,7 @@ nav .Navigation ul li a.active {
     margin-right: 15px;
     border-radius: 5px;
     text-align: center;
-    backdrop-filter: blur(4px);
+    
 }
 
 #registration .form {

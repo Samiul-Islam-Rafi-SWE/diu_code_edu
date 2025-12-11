@@ -1,7 +1,6 @@
 {
-  
-  "name": "react-project",
-  "homepage": "https://samiul-islam-rafi-swe.github.io/react-project",
+  "name": "diu-code-edu",
+  "homepage": "https://samiul-islam-rafi-swe.github.io/diu-code-edu",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
-    "predeploy":"npm run build",
-    "deploy": "gh-pages -d dish"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -24,6 +23,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
     "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",

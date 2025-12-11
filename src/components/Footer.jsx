@@ -5,31 +5,39 @@ const Footer = () => {
     <footer>
       <div className="footer-col">
         <h3>Top Products</h3>
-        <li>Manage Reputation</li>
-        <li>Power Tools</li>
-        <li>Managed Website</li>
-        <li>Marketing Service</li>
+        <ul>
+          <li>Manage Reputation</li>
+          <li>Power Tools</li>
+          <li>Managed Website</li>
+          <li>Marketing Service</li>
+        </ul>
       </div>
       <div className="footer-col">
         <h3>Quick Links</h3>
-        <li>Jobs</li>
-        <li>Brand Assets</li>
-        <li>Investor Relations</li>
-        <li>Terms of Service</li>
+        <ul>
+          <li>Jobs</li>
+          <li>Brand Assets</li>
+          <li>Investor Relations</li>
+          <li>Terms of Service</li>
+        </ul>
       </div>
       <div className="footer-col">
         <h3>Features</h3>
-        <li>Manage Reputation</li>
-        <li>Power Tools</li>
-        <li>Managed Website</li>
-        <li>Marketing Service</li>
+        <ul>
+          <li>Manage Reputation</li>
+          <li>Power Tools</li>
+          <li>Managed Website</li>
+          <li>Marketing Service</li>
+        </ul>
       </div>
       <div className="footer-col">
         <h3>Resources</h3>
-        <li>Guides</li>
-        <li>Research</li>
-        <li>Experts</li>
-        <li>Marketing Service</li>
+        <ul>
+          <li>Guides</li>
+          <li>Research</li>
+          <li>Experts</li>
+          <li>Marketing Service</li>
+        </ul>
       </div>
       
       <div className="copyright">
